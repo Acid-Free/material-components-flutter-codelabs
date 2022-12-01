@@ -210,7 +210,7 @@ class ProductsRepository {
         category: Category.clothing,
         id: 27,
         isFeatured: true,
-        name: 'Walter henley (white)',
+        name: 'Walter henley (incredibly white)',
         price: 38,
       ),
       Product(
