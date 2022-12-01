@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
+import 'supplemental/cut_corners_border.dart';
 
 import 'home.dart';
 import 'login.dart';
@@ -35,7 +36,7 @@ ThemeData _buildShrineTheme() {
     ),
     inputDecorationTheme: const InputDecorationTheme(
       border: OutlineInputBorder(),
-      focusedBorder: OutlineInputBorder(
+      focusedBorder: CutCornersBorder(
         borderSide: BorderSide(
           width: 2.0,
           color: kShrineBrown900,
@@ -43,6 +44,20 @@ ThemeData _buildShrineTheme() {
       ),
       floatingLabelStyle: TextStyle(
         color: kShrineBrown900,
+      ),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        shape: const BeveledRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(7.0)),
+        ),
+      ),
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        shape: const BeveledRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(7.0)),
+        ),
       ),
     ),
   );
